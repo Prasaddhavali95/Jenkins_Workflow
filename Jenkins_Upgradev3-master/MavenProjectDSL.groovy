@@ -7,7 +7,7 @@ job('MVN-Via-DSL') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package', 'Jenkins_Upgradev3-master/maven-samples/single-module//pom.xml')
+        maven('clean package', 'Jenkins_Upgradev3-master/maven-samples/single-module/pom.xml')
     }
     publishers {
         //archive the war file generated
