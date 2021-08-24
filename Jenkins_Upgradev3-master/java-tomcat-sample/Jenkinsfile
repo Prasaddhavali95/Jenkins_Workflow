@@ -24,7 +24,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS'){
                     input message:'Approve PRODUCTION Deployment?'
                 }
-                build job: 'Deployment_App_ENV'
+                build job: 'Tomcat_first_application'
             }
         }
     }
